@@ -1,12 +1,16 @@
-
+import { Routes, Route } from "react-router-dom"
 
 function App() {
 
 
   return (
-   <div className="onye-njem">
-    <h1>Welcome to onje-njem</h1>
-   </div>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="dashboard" element={<Dashboard />} />
+      </Routes>
+    </div>
   )
 }
 
